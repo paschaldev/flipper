@@ -611,7 +611,7 @@ The code below enables the following integrations:
 - (void) initializeFlipper:(UIApplication *)application {
   #ifdef DEBUG
     FlipperClient *client = [FlipperClient sharedClient];
-    SKDescriptorMapper \*layoutDescriptorMapper = [[SKDescriptorMapper alloc] initWithDefaults];
+    SKDescriptorMapper *layoutDescriptorMapper = [[SKDescriptorMapper alloc] initWithDefaults];
     [client addPlugin: [[FlipperKitLayoutPlugin alloc] initWithRootNode: application withDescriptorMapper: layoutDescriptorMapper]];
     [client addPlugin:[[FKUserDefaultsPlugin alloc] initWithSuiteName:nil]]; [client start];
     [client addPlugin: [[FlipperKitNetworkPlugin alloc] initWithNetworkAdapter:[SKIOSNetworkAdapter new]]];
