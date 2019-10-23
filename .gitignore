@@ -27,3 +27,4 @@ libs/*/bin/**/*.class
 
 # Mac OS X
 *.DS_Store
+config.bat
